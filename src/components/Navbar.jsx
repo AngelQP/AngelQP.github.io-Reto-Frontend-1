@@ -31,12 +31,12 @@ export const Navbar = () => {
           <a className='hover:text-SoftRed' href="#">Categories</a>
         </li>
       </ul>
-
-      <div className={` top-0 w-full h-screen absolute z-10 ${showMenu ? 'bg-VeryDarkBlue/40 left-0' : 'bg-transparent -left-[1000px]'}`}>
+      
+      <div className={`top-0 left-0 w-full h-screen absolute z-10 transition-translate ${showMenu ? 'bg-VeryDarkBlue/40 translate-x-0 duration-0' : 'delay-300 bg-transparent duration-0 translate-x-[700px] '}`}>
 
         <ul 
-          className={`sm:hidden top-0 h-screen flex flex-col justify-start pt-[160px] px-5 gap-4 items-start text-[18px] w-[250px] right-0 transition-translate duration-700
-          ${showMenu ? 'absolute bg-OffWhite translate-x-0 ' : 'translate-x-[700px]'}`}
+          className={`absolute sm:hidden top-0 h-screen flex flex-col justify-start pt-[160px] px-5 gap-4 items-start text-[18px] w-[250px] right-0 transition-translate duration-700
+          ${showMenu ? 'bg-OffWhite translate-x-[calc(-100%+250px)]' : 'translate-x-[700px]'}`}
         >
           <li>
             <a className='hover:text-SoftRed' href="#">Home</a>
