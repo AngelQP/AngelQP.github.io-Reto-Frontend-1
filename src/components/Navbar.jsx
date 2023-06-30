@@ -16,7 +16,7 @@ export const Navbar = () => {
         className={`hidden sm:flex text-[18px] sm:w-[438px] sm:justify-around sm:text-[16px] sm:items-center`
         }>
         <li>
-          <a className='hover:text-SoftRed' href="#">Home</a>
+          <a className='hover:text-SoftRed cursor-pointer' href="#">Home</a>
         </li>
         <li>
           <a className='hover:text-SoftRed' href="#">New</a>
@@ -32,7 +32,7 @@ export const Navbar = () => {
         </li>
       </ul>
       
-      <div className={`top-0 left-0 w-full h-screen absolute z-10 transition-translate ${showMenu ? 'bg-VeryDarkBlue/40 translate-x-0 duration-0' : 'delay-300 bg-transparent duration-0 translate-x-[700px] '}`}>
+      <div className={`top-0 left-0 w-full h-screen absolute z-10 transition-translate md:hidden ${showMenu ? 'bg-VeryDarkBlue/40 translate-x-0 duration-0' : 'delay-300 bg-transparent duration-0 translate-x-[700px] '}`}>
 
         <ul 
           className={`absolute sm:hidden top-0 h-screen flex flex-col justify-start pt-[160px] px-5 gap-4 items-start text-[18px] w-[250px] right-0 transition-translate duration-700
