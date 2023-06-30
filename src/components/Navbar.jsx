@@ -16,7 +16,7 @@ export const Navbar = () => {
         className={`hidden sm:flex text-[18px] sm:w-[438px] sm:justify-around sm:text-[16px] sm:items-center`
         }>
         <li>
-          <a className='hover:text-SoftRed cursor-pointer' href="#">Home</a>
+          <a className='hover:text-SoftRed' href="#">Home</a>
         </li>
         <li>
           <a className='hover:text-SoftRed' href="#">New</a>
